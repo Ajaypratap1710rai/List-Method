@@ -27,3 +27,14 @@ print("After reverse:", my_list)
 
 copied_list = my_list.copy()
 print("Copied list:", copied_list)  
+
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+
+diff = list(set(list1) ^ set(list2))  # Symmetric difference
+print(diff)  # Output: [1, 2, 5, 6]
+
+list1 = [1, 2, 3, 4]
+list2 = [3, 4, 5, 6]
+common_elements = list(set(list1) & set(list2))
+print(common_elements)  # Output: [3, 4]
